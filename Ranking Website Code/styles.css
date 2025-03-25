@@ -1,0 +1,90 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+}
+
+header {
+  text-align: center;
+  padding: 2rem 0;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+main {
+  flex: 1; /* Allow the main content to grow and push the footer to the bottom */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.character-card {
+  display: flex;
+  align-items: flex-start;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.character-card:hover {
+  transform: translateY(-10px);
+}
+
+.character-image {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-right: 1px solid #ddd;
+}
+
+.character-info {
+  padding: 1rem;
+  flex: 1;
+}
+
+.character-name {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #2575fc;
+}
+
+.character-rank {
+  font-size: 1.2rem;
+  color: #6a11cb;
+  margin-bottom: 1rem;
+}
+
+.character-backstory {
+  font-size: 1rem;
+  color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #333;
+  color: white;
+}
